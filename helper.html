@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        
+    </div>
+
+    <script type="text/html" id="tmp">
+        {{if title}}
+           {{title}}
+        {{else}}
+            'moren'
+        {{/if}}
+    </script>
+
+
+    <script src="jquery-1.11.0.min.js"></script>
+    <script src="template.js"></script>
+    
+    <script>
+        var data = {'title':''};
+        
+        template.helper('subStr', function(str) {
+            if(!str) {
+                str = '默认！';
+            }
+            // str = str.substr(0,len)+'...';
+            return str;
+        });
+
+        var tmpHtml = template('tmp', data);
+        $('#demo').html(tmpHtml);
+        
+
+    </script>
+</body>
+</html>

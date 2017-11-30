@@ -1,0 +1,67 @@
+<!DOCTYPE HTML >  
+<html>  
+    <head>  
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+        <title>Index</title> 
+        <script src="jquery-1.11.0.min.js"></script>  
+        <script src="template.js"></script>  
+    </head>  
+    <body>  
+        <div id="content"></div>  
+        <script id="test" type="text/html">  
+           
+                <h1>{{title}}</h1>  
+                <ul>  
+                    {{each videoList as ele index}}  
+                        <li>索引：{{ele.name}}描述：{{ele.personal_desc}}</li>  
+                    {{/each}}  
+                </ul>  
+         
+        </script>  
+        <script>  
+             var param = {}; 
+             $.ajax({
+            url: 'text.json',
+            type: 'get',
+            dataType: 'json',
+            data:param,
+            success:function(data) {
+             
+                if (data.code == 0) {
+                   var tmpHtml = '',
+                        data = data.data;
+                    if (data.videoList) {
+                        tmpHtml = template('test', data);
+                        $('#content').html(tmpHtml);
+                   
+                        
+                    } else {
+                        util.layer('暂无数据！');
+                    }
+
+    }     
+            } ,
+            error: function (xhr, erroType, error, msg) {
+                try {
+                    if (msg.indexOf("404") != "-1") {
+                        alert("错误的请求地址！");
+                    } else {
+                        alert("加载超时，请刷新网页");
+                    }
+                } catch (e) {
+                    if (xhr.readyState == 0) {
+                        // 无连接,页面频繁刷新导致的问题,先忽略
+                    } else {
+                        alert("服务器数据错误！");
+                    }
+                }
+
+                // errFuc && errFuc();
+            },
+           //请求完成后的回调，不管是否出错
+
+        });
+        </script>  
+        
+    </body>  
+</html>  				

@@ -1,0 +1,62 @@
+
+
+
+{
+    "code": 0,
+    "msg": "操作成功",
+    "login_status": 0,
+    "user_id": null,
+    "user_name": null,
+    "is_user": "0",
+    "is_bond": null,
+    "is_company": null,
+    "is_lady": null,
+    "is_admin": null,
+    "head_image": null,
+    "data": {
+        "videoList": [
+            {
+                "usersid": "u_57615i9k7j5g3_0k28js6d",
+                "head_image": "http://lkker-10041312.file.myqcloud.com/input/users/u_57615i9k7j5g3_0k28js6d_head.png",
+                "name": "黑川雅之",
+                "personal_desc": "生命与性",
+                "video_url": "http://player.youku.com/embed/XMTYwODM4NDYyNA",
+                "video_cover_small": "http://lkker-10041312.file.myqcloud.com/input/video/u_57615i9k7j5g3_0k28js6d.jpg",
+                "video_cover_big": null,
+                "video_id": 19
+            },
+            {
+                "usersid": "u_576761ef533ea_3gW0TjG9",
+                "head_image": "http://lkker-10041312.file.myqcloud.com/input/users/u_576761ef533ea_3gW0TjG9_head_image.png",
+                "name": "邱丰顺Kumo",
+                "personal_desc": "享受生活，创造生活！",
+                "video_url": "http://player.youku.com/embed/XMTYxMTQzNDg5Mg",
+                "video_cover_small": "http://lkker-10041312.file.myqcloud.com/input/video/u_576761ef533ea_3gW0TjG9.jpg",
+                "video_cover_big": null,
+                "video_id": 20
+            },
+            {
+                "usersid": "olsmOuITYfOocHT11pcErgSVdjtY",
+                "head_image": "http://lkker-10041312.file.myqcloud.com/Images/2016-11-10/9862600_1478760290.jpg",
+                "name": "易介中",
+                "personal_desc": "大设计策划师/城市设计师/建筑设计师/文创专家",
+                "video_url": "http://player.youku.com/embed/XMTgwOTg3MTE2MA",
+                "video_cover_small": "http://lkker-10041312.cos.myqcloud.com/Images/QQ%E5%9B%BE%E7%89%8720161108141506.png",
+                "video_cover_big": "",
+                "video_id": 22
+            }
+        ]
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
